@@ -23,12 +23,23 @@
                     <a href="index.html">
                         <img src="./images/logo.png" alt="Arkisante logo">
                     </a>
+                    <!-- checkbox to control the menu -->
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
                     <!-- Menu btn -->
-                    <button class="hamburger" aria-label="Abrir menu">
+                    <label for="menu-toggle" class="hamburger" aria-label="Open menu">
                         &#9776;
-                    </button>
+                    </label>
                     <!-- Menu options -->
                     <nav class="navMenu" aria-label="Primary navigation">
+                        <!-- header menu -->
+                        <div class="navMenu-header">
+                            <span class="navMenu-title">Menu</span>
+
+                            <!-- btn to close menu -->
+                            <label for="menu-toggle" class="closeMenu" aria-label="Fechar menu">
+                                ✕
+                            </label>
+                        </div>
                         <ul>  
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="./historia.html">Nossa história</a></li>
@@ -36,6 +47,10 @@
                             <li><a href="./gestao.html">Gestão 360º</a></li>
                             <li><a href="./contatos.html">Contatos</a></li>
                         </ul>
+                        <!-- Menu dropdown img -->
+                        <div class="nav-image">
+                            <img src="./images/menu-img.png" alt="decor Arkisante">
+                        </div>
                     </nav>
                 </div>
             </header>
@@ -44,24 +59,27 @@
                     <div class="history-content">
                         <h1>
                             <span class="line-1">Nossa</span>
-                            <span class="line-2">História</span>
+                            <span class="line-2"><b>História</b></span>
                         </h1>
                         <div class="history-text">
                             <p>
                                 A MD Arkisante é um escritório especializado no desenvolvimento e execução de projetos arquitetônicos para a área da saúde hospitalar e ambulatorial.
                             </p>
+                            <br>
                             <p>
                                 Com mais de 30 anos de experiência, nossa equipe de arquitetos e engenheiros especialistas atua de forma sistêmica, acompanhando o cliente desde a definição do programa arquitetônico até a entrega das chaves.
                             </p>
                             <p>
                                 Nosso compromisso é criar soluções alinhadas às normas da Vigilância Sanitária (RDCs), unindo técnica, funcionalidade e humanização para oferecer espaços que elevam a qualidade do atendimento e o bem-estar dos usuários.
                             </p>
+                            <br>
+                            <p>
+                                Ao longo de nossa trajetória, participamos da implantação e requalificação de diversos centros médicos, clínicas, hospitais e ambientes de alta complexidade. Cada projeto é elaborado com rigor técnico e profundo conhecimento dos fluxos assistenciais, garantindo segurança, eficiência operacional e conformidade com todas as exigências regulatórias.
+                            </p>
+                            <br>
+                            <p>Acreditamos que a arquitetura em saúde vai além da estética: ela é um instrumento essencial para otimizar processos, reduzir riscos, qualificar equipes e transformar a experiência do paciente. Por isso, estudamos cuidadosamente cada etapa do funcionamento do serviço, propondo soluções que integram tecnologia, ergonomia e sustentabilidade.
+                            </p>
                         </div>
-                        <!-- Meet the Team Button -->
-                        <a href="#" class="team-btn">
-                            Conheça nossa equipe
-                            <span class="material-symbols-outlined">arrow_forward</span>
-                        </a>
                     </div>
                     <div id="history-img">
                         <img src="./images/history-img.png" alt="office architecture">
@@ -72,13 +90,14 @@
             <footer>
                 <div class="footer-container">
                     <nav class="footer-nav" aria-label="Secondary navigation">
-                            <ul>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Termos e Condições</a></li>
-                                <li><a href="#">Fale conosco</a></li>
-                                <li><a href="#">Privacidade & Cookies</a></li>
-                            </ul>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Termos e Condições</a></li>
+                            <li><a href="#">Fale conosco</a></li>
+                            <li><a href="#">Privacidade & Cookies</a></li>
+                        </ul>
                     </nav>
+
                     <p>&copy; 2025 | Designed by Isabella Cassese.</p>
                 </div>
             </footer>

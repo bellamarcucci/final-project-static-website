@@ -11,9 +11,17 @@
         <meta name="description" content="Architecture firm specialized in clinical and healthcare projects. We design functional, safe, and welcoming spaces focused on well-being, efficiency, and contemporary design.">
         
         <link rel="stylesheet" href="styles.css">
+
+        <!-- Google Fonts & Icons -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+        <!-- Material Symbols (ícones) -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+        <!-- Fontes Playfair + Montserrat -->
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&
+        family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
     </head>
 
     <body> 
@@ -24,12 +32,23 @@
                     <a href="index.html">
                         <img src="./images/logo.png" alt="Arkisante logo">
                     </a>
+                    <!-- checkbox to control the menu -->
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
                     <!-- Menu btn -->
-                    <button class="hamburger" aria-label="Abrir menu">
+                    <label for="menu-toggle" class="hamburger" aria-label="Open menu">
                         &#9776;
-                    </button>
+                    </label>
                     <!-- Menu options -->
                     <nav class="navMenu" aria-label="Primary navigation">
+                        <!-- header menu -->
+                        <div class="navMenu-header">
+                            <span class="navMenu-title">Menu</span>
+
+                            <!-- btn to close menu -->
+                            <label for="menu-toggle" class="closeMenu" aria-label="Fechar menu">
+                                ✕
+                            </label>
+                        </div>
                         <ul>  
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="./historia.html">Nossa história</a></li>
@@ -37,16 +56,20 @@
                             <li><a href="./gestao.html">Gestão 360º</a></li>
                             <li><a href="./contatos.html">Contatos</a></li>
                         </ul>
+                        <!-- Menu dropdown img -->
+                        <div class="nav-image">
+                            <img src="./images/menu-img.png" alt="decor Arkisante">
+                        </div>
                     </nav>
                 </div>
             </header>
-            <main>
+            <main class="mainHome">
                 <div class="main-content">
                     <div id="first-img">
                     <img src="./images/first-img.png" alt="living room architecture">
                     </div>
                     <div class="main-text">
-                        <h1>Arkisantè & bem-estar</h1>
+                        <h1><b>Arkisantè</b> & bem-estar</h1>
                         <p>
                             Buscamos criar espaços que promovam o bem-estar físico, mental e emocional das pessoas. 
                             Mais do que projetar ambientes funcionais, ela considera o impacto da luz natural, da ventilação, das cores e dos materiais na experiência humana. 
@@ -66,15 +89,10 @@
                     <div id="second-img">
                     <img src="./images/second-img.png" alt="waiting room architecture">
                     </div>
-                    <!-- Begin Button -->
-                    <a href="#" class="begin-btn">
-                        Começar
-                        <span class="material-symbols-outlined">arrow_forward</span>
-                    </a>
                 </div>
-                <div class="aside-content">
+                <aside class="aside-content">
                     <div class="aside-title">
-                        <h2><b>Arquitetura e</b><br>Saúde integrada</h2>
+                        <h1><b>Arquitetura </b><br>e Saúde integrada</h1>
                     </div>
                     <div class="aside-text">
                         <p>É o design estratégico de espaços de saúde que unem funcionalidade, conforto e bem-estar, 
@@ -91,7 +109,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                </div>
+                </aside>
                 <!--Back to top button-->
                 <div class="back-to-top-container">
                     <a href="#" class="back-to-top">
@@ -103,12 +121,12 @@
             <footer>
                 <div class="footer-container">
                     <nav class="footer-nav" aria-label="Secondary navigation">
-                            <ul>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Termos e Condições</a></li>
-                                <li><a href="#">Fale conosco</a></li>
-                                <li><a href="#">Privacidade & Cookies</a></li>
-                            </ul>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Termos e Condições</a></li>
+                            <li><a href="#">Fale conosco</a></li>
+                            <li><a href="#">Privacidade & Cookies</a></li>
+                        </ul>
                     </nav>
 
                     <p>&copy; 2025 | Designed by Isabella Cassese.</p>
